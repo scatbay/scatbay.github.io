@@ -1,0 +1,222 @@
+@charset 'utf-8';
+html{
+    font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+    font-size: 16px;
+    color: #666;
+}
+html, body, ul, ol, dl, h1, h2, h3, h4, h5, h6, p{ margin: 0; padding: 0 }
+body{
+    
+}
+a{ text-decoration: none; }
+.txt-hl{ color: #33cc00; }
+.link-button{
+    height: 46px;
+    line-height: 46px;
+    border: 1px solid rgba(255, 255, 255, .4);
+    border-radius: 3px;
+    display: inline-block;
+    padding: 0 22px;
+    color: #fff;
+}
+.icon{}
+.icon.ib{
+    width: 128px;
+    height: 128px;
+    display: block;
+    margin: 46px auto;
+    border-radius: 50%;
+    border: 8px solid #e5e5e5;
+    text-align: center;
+    line-height: 128px;
+    color: #fff;
+    font-size: 64px;
+}
+.icon.ib.icon-f1{
+    background: #f93;
+}
+.icon.ib.icon-f2{
+    background: #0c3;
+}
+.icon.ib.icon-f3{
+    background: #3cc;
+}
+
+.page-wrapper{}
+
+.page-section{
+    background: #fff;
+    position: relative;
+    clear: both;
+}
+.page-section::before,
+.page-section .page-masker{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 1;
+}
+.page-wrapper .block-wrapper{
+    width: 1300px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+.page-section.page-header{
+    height: 709px;
+    background: #ccc url('../img/cover-bg-1.jpg') no-repeat 50% top;
+}
+.page-section.page-header::before,
+.page-section.page-header .page-masker{
+    background-color: rgba(0, 0, 0, .2)
+}
+.logo-wrapper{
+    padding: 16px 50px;
+}
+.logo-link{
+    background: url('../img/logo.png') no-repeat;
+    width: 240px;
+    height: 80px;
+    display: block;
+}
+.logo-link *{ display: none;}
+
+.top-navigator{
+    position: absolute;
+    top: 36px;
+    right: 40px;
+}
+.heading-wrapper{
+    width: 696px;
+    margin: 100px auto;
+}
+.heading-wrapper h2{
+    height: 100px;
+    background: url('../img/sub-logo.png') no-repeat;
+    text-indent: -100000px;
+}
+.heading-wrapper .heading-details{
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    background-color: rgba(51, 204, 51, .8);
+    text-align: center;
+}
+.arrow-r{
+    display: inline-block;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 6px;
+    border-left-color: #fff;
+}
+.page-section.team-cover{
+    background: #ccc url('../img/cover-bg-2.jpg') no-repeat 50% top;
+    height: 200px;
+}
+.page-section.team-cover::before,
+.page-section.team-cover .page-masker{
+    background-color: rgba(0, 0, 0, .5)
+}
+.team-cover .heading-wrapper{
+    text-align: center;
+    color: #fff;
+    font-size: 48px;
+    line-height: 200px;
+}
+.page-section.team-detail{
+    text-align: center;
+}
+.team-detail .block-wrapper{
+    padding: 54px 0;
+    font-size: 18px;
+    line-height: 30px;
+    color: #818a91;
+}
+.team-detail .link-button{
+    color: #999;
+    border-color: #999;
+    margin: 8px;
+}
+
+
+
+
+.sub-section{
+    float: left;
+    width: 33.333%;
+}
+.sub-section .sub-block{
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    color: #818a91;
+}
+.sub-block h3{
+    color: #373a3c;
+    font-size: 36px;
+    line-height: 64px;
+}
+.page-section.page-footer{
+    border-top: 1px solid #dfe4de;
+    height: 77px;
+    background: #fff;
+}
+.copyright-wrapper{
+    line-height: 40px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../font/icomoon.eot?betnc8');
+    src:    url('../font/icomoon.eot?betnc8#iefix') format('embedded-opentype'),
+        url('../font/icomoon.ttf?betnc8') format('truetype'),
+        url('../font/icomoon.woff?betnc8') format('woff'),
+        url('../font/icomoon.svg?betnc8#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jiang:before {
+    content: "\e900";
+}
+.icon-mobile:before {
+    content: "\e904";
+}
+.icon-qq:before {
+    content: "\e901";
+}
+.icon-cloud-check:before {
+    content: "\e902";
+}
+.icon-desktop:before {
+    content: "\e903";
+}
+.icon-paper-plane-o:before {
+    content: "\e905";
+}
+.icon-qrcode:before {
+    content: "\e906";
+}
+.icon-stats-dots:before {
+    content: "\e907";
+}
+
+
