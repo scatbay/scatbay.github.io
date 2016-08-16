@@ -9,7 +9,7 @@ body{
     
 }
 a{ text-decoration: none; }
-.txt-hl{ color: #33cc00; }
+.txt-hl{ color: #33cc00; }1
 .link-button{
     height: 46px;
     line-height: 46px;
@@ -58,7 +58,6 @@ a{ text-decoration: none; }
     z-index: 1;
 }
 .page-wrapper .block-wrapper{
-    width: 1300px;
     margin: 0 auto;
     position: relative;
     z-index: 2;
