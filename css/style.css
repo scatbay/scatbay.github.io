@@ -6,7 +6,7 @@ html{
 }
 html, body, ul, ol, dl, h1, h2, h3, h4, h5, h6, p{ margin: 0; padding: 0 }
 body{
-    
+
 }
 a{ text-decoration: none; }
 .txt-hl{ color: #33cc00; }
@@ -75,7 +75,6 @@ a{ text-decoration: none; }
 }
 .logo-link{
     background: url('../img/logo.png') no-repeat;
-    width: 240px;
     height: 80px;
     display: block;
 }
